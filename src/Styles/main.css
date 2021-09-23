@@ -197,7 +197,7 @@ input[type=button] {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: #cee0f3;
+  background: #b1cfec;
   color: #2e73b8;
 }
 
@@ -274,6 +274,196 @@ h3,
 h4 {
     line-height: 1;
   }
+}
+.Navbar,
+.List {
+  background-color: #f2f5f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Navbar *,
+.List * {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+.Navbar .Link1,
+.Navbar .Link2,
+.Navbar .Link3,
+.Navbar .Link4,
+.List .Link1,
+.List .Link2,
+.List .Link3,
+.List .Link4 {
+  user-select: none;
+  font-size: 125%;
+  color: #2e73b8;
+  transition: all 0.3s ease;
+  max-width: 5rem;
+  text-align: center;
+}
+.Navbar .Link1::before,
+.Navbar .Link2::before,
+.Navbar .Link3::before,
+.Navbar .Link4::before,
+.List .Link1::before,
+.List .Link2::before,
+.List .Link3::before,
+.List .Link4::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 5.1rem;
+  width: 0%;
+  height: 2px;
+  background-color: #1e4a76;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+.Navbar .Link1:hover,
+.Navbar .Link2:hover,
+.Navbar .Link3:hover,
+.Navbar .Link4:hover,
+.List .Link1:hover,
+.List .Link2:hover,
+.List .Link3:hover,
+.List .Link4:hover {
+  color: #78abdd;
+}
+.Navbar .Link1:hover::before,
+.Navbar .Link2:hover::before,
+.Navbar .Link3:hover::before,
+.Navbar .Link4:hover::before,
+.List .Link1:hover::before,
+.List .Link2:hover::before,
+.List .Link3:hover::before,
+.List .Link4:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 5.1rem;
+  height: 2px;
+  background-color: #1e4a76;
+  transition: all 0.3s ease;
+}
+.Navbar .Link1:hover::before,
+.List .Link1:hover::before {
+  width: 3.5rem;
+}
+.Navbar .Link2:hover::before,
+.List .Link2:hover::before {
+  width: 3.5rem;
+}
+.Navbar .Link3:hover::before,
+.List .Link3:hover::before {
+  width: 5rem;
+}
+.Navbar .Link4:hover::before,
+.List .Link4:hover::before {
+  width: 2.5rem;
+}
+.Navbar .Social *,
+.List .Social * {
+  color: #78abdd;
+  margin-top: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.menu {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: rotate(0deg);
+  transform-origin: 50% 45%;
+}
+
+.menuTurn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: rotate(90deg);
+  transform-origin: 50% 45%;
+}
+
+.menu,
+.menuTurn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: #2e73b8;
+}
+
+.Compressed {
+  justify-content: space-between;
+  font-size: 150%;
+}
+
+#Logo {
+  user-select: none;
+}
+
+span#Hello {
+  color: black;
+  margin: 0;
+}
+
+.List {
+  user-select: none;
+  background-image: linear-gradient(#dbe3eb, #f2f5f8, #f2f5f8, #f2f5f8, #f2f5f8, #f2f5f8, #f2f5f8, #f2f5f8, #f2f5f8);
+  height: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.List * {
+  visibility: hidden;
+  color: #2e73b8;
+}
+.List:hover {
+  transition: all 0.3s ease;
+  background-image: linear-gradient(#9cb3c9, #bdccdb, #bdccdb, #bdccdb, #bdccdb, #bdccdb, #bdccdb, #bdccdb, #bdccdb);
+}
+.List:hover * {
+  color: #f2f5f8;
+  transition: all 0.3s ease;
+}
+
+.List.Clicked {
+  user-select: none;
+  height: auto;
+  visibility: visible;
+}
+.List.Clicked * {
+  visibility: visible;
+}
+
+.Link {
+  font-size: 125%;
+  max-width: 5rem;
+  text-align: center;
+  user-select: none;
+}
+
+br {
+  user-select: none;
+}
+
+#socialsCompressed {
+  height: 0;
+  visibility: hidden;
+}
+
+#socialsCompressed.Clicked {
+  height: 2rem;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=main.css.map */

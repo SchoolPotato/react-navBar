@@ -1,6 +1,6 @@
 @use '../themes/defaultTheme' as *;
 
-$transition: all 0.3s linear;
+$transition: all 0.3s ease;
 $spacing: 0.1rem;
 $radius: 0.25rem;
 $light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);

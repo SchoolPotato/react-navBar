@@ -1,0 +1,71 @@
+@use "../themes/defaultTheme" as *;
+@use "../util/util" as *;
+
+.List {
+  user-select: none;
+  background-image: linear-gradient(
+    $clr-grey-8,
+    $clr-grey-9,
+    $clr-grey-9,
+    $clr-grey-9,
+    $clr-grey-9,
+    $clr-grey-9,
+    $clr-grey-9,
+    $clr-grey-9,
+    $clr-grey-9
+  );
+  height: 0;
+  visibility: hidden;
+  * {
+    visibility: hidden;
+    color: $clr-primary-3;
+  }
+  transition: $transition;
+  &:hover {
+    transition: $transition;
+    background-image: linear-gradient(
+      $clr-grey-6,
+      $clr-grey-7,
+      $clr-grey-7,
+      $clr-grey-7,
+      $clr-grey-7,
+      $clr-grey-7,
+      $clr-grey-7,
+      $clr-grey-7,
+      $clr-grey-7
+    );
+    * {
+      color: $clr-grey-9;
+      transition: $transition;
+    }
+  }
+}
+
+.List.Clicked {
+  user-select: none;
+  height: auto;
+  visibility: visible;
+  * {
+    visibility: visible;
+  }
+}
+
+.Link {
+  font-size: 125%;
+  max-width: 5rem;
+  text-align: center;
+  user-select: none;
+}
+
+br {
+  user-select: none;
+}
+
+#socialsCompressed {
+  height: 0;
+  visibility: hidden;
+}
+#socialsCompressed.Clicked {
+  height: 2rem;
+  visibility: visible;
+}
